@@ -6,8 +6,8 @@
 //  Copyright © 2018年 lijin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 
-@interface MZLAppDelegate : NSObject
+@interface MZLAppDelegate : NSObject <NSApplicationDelegate>
 
 @end

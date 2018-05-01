@@ -7,13 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C556D54C20981920005F059B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D54B20981920005F059B /* AppDelegate.m */; };
-		C556D54F20981920005F059B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D54E20981920005F059B /* ViewController.m */; };
 		C556D55120981921005F059B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C556D55020981921005F059B /* Assets.xcassets */; };
 		C556D55420981921005F059B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C556D55220981921005F059B /* Main.storyboard */; };
 		C556D55720981921005F059B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D55620981921005F059B /* main.m */; };
 		C556D56220981921005F059B /* MZLCrashLogAnalyzeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D56120981921005F059B /* MZLCrashLogAnalyzeTests.m */; };
 		C556D56D20981921005F059B /* MZLCrashLogAnalyzeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D56C20981921005F059B /* MZLCrashLogAnalyzeUITests.m */; };
+		C556D5C220981A65005F059B /* findSymbolicatecrash.sh in Resources */ = {isa = PBXBuildFile; fileRef = C556D58620981A65005F059B /* findSymbolicatecrash.sh */; };
+		C556D5C320981A65005F059B /* analyzeCrashLog.sh in Resources */ = {isa = PBXBuildFile; fileRef = C556D58720981A65005F059B /* analyzeCrashLog.sh */; };
+		C556D5DB20981A77005F059B /* MZLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D5DA20981A77005F059B /* MZLAppDelegate.m */; };
+		C556D5DE20981ACD005F059B /* MZLAnalyzeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D5DD20981ACD005F059B /* MZLAnalyzeHandler.m */; };
+		C556D5E120981AE0005F059B /* MZLFileHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D5E020981AE0005F059B /* MZLFileHandler.m */; };
+		C556D5E420981AF3005F059B /* MZLShellScriptHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D5E320981AF3005F059B /* MZLShellScriptHandler.m */; };
+		C556D61420981C0E005F059B /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D5E720981C0E005F059B /* HTMLParser.m */; };
+		C556D61520981C0E005F059B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C556D5E920981C0E005F059B /* README.md */; };
+		C556D61620981C0E005F059B /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D5EB20981C0E005F059B /* HTMLNode.m */; };
+		C556D61720981C0E005F059B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C556D5ED20981C0E005F059B /* README.md */; };
+		C556D61820981C0E005F059B /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = C556D5EE20981C0E005F059B /* LICENSE.txt */; };
+		C556D61920981C0E005F059B /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D5F220981C0E005F059B /* unzip.c */; };
+		C556D61A20981C0E005F059B /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D5F320981C0E005F059B /* zip.c */; };
+		C556D61B20981C0E005F059B /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D5F420981C0E005F059B /* ioapi.c */; };
+		C556D61C20981C0E005F059B /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D5F520981C0E005F059B /* mztools.c */; };
+		C556D61D20981C0E005F059B /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D5FD20981C0E005F059B /* SSZipArchive.m */; };
+		C556D61E20981C0E005F059B /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D60020981C0E005F059B /* aeskey.c */; };
+		C556D61F20981C0E005F059B /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D60120981C0E005F059B /* hmac.c */; };
+		C556D62020981C0E005F059B /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D60420981C0E005F059B /* aescrypt.c */; };
+		C556D62120981C0E005F059B /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D60520981C0E005F059B /* fileenc.c */; };
+		C556D62220981C0E005F059B /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D60820981C0E005F059B /* sha1.c */; };
+		C556D62320981C0E005F059B /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D60D20981C0E005F059B /* prng.c */; };
+		C556D62420981C0E005F059B /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D60F20981C0E005F059B /* pwd2key.c */; };
+		C556D62520981C0E005F059B /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D61020981C0E005F059B /* aestab.c */; };
+		C556D62620981C0E005F059B /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = C556D61320981C0E005F059B /* entropy.c */; };
+		C556D62920981C56005F059B /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C556D62820981C56005F059B /* libxml2.tbd */; };
+		C556D62C20981D91005F059B /* MZLOATAutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D62B20981D91005F059B /* MZLOATAutoViewController.m */; };
+		C556D63020981DB1005F059B /* MZLDSYMManuallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D62E20981DB1005F059B /* MZLDSYMManuallyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +61,6 @@
 
 /* Begin PBXFileReference section */
 		C556D54720981920005F059B /* MZLCrashLogAnalyze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZLCrashLogAnalyze.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C556D54A20981920005F059B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C556D54B20981920005F059B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C556D54D20981920005F059B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C556D54E20981920005F059B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C556D55020981921005F059B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C556D55320981921005F059B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C556D55520981921005F059B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +72,62 @@
 		C556D56820981921005F059B /* MZLCrashLogAnalyzeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZLCrashLogAnalyzeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C556D56C20981921005F059B /* MZLCrashLogAnalyzeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZLCrashLogAnalyzeUITests.m; sourceTree = "<group>"; };
 		C556D56E20981921005F059B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C556D58620981A65005F059B /* findSymbolicatecrash.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = findSymbolicatecrash.sh; sourceTree = "<group>"; };
+		C556D58720981A65005F059B /* analyzeCrashLog.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = analyzeCrashLog.sh; sourceTree = "<group>"; };
+		C556D5D920981A77005F059B /* MZLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZLAppDelegate.h; sourceTree = "<group>"; };
+		C556D5DA20981A77005F059B /* MZLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZLAppDelegate.m; sourceTree = "<group>"; };
+		C556D5DC20981ACD005F059B /* MZLAnalyzeHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZLAnalyzeHandler.h; sourceTree = "<group>"; };
+		C556D5DD20981ACD005F059B /* MZLAnalyzeHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZLAnalyzeHandler.m; sourceTree = "<group>"; };
+		C556D5DF20981AE0005F059B /* MZLFileHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZLFileHandler.h; sourceTree = "<group>"; };
+		C556D5E020981AE0005F059B /* MZLFileHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZLFileHandler.m; sourceTree = "<group>"; };
+		C556D5E220981AF3005F059B /* MZLShellScriptHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZLShellScriptHandler.h; sourceTree = "<group>"; };
+		C556D5E320981AF3005F059B /* MZLShellScriptHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZLShellScriptHandler.m; sourceTree = "<group>"; };
+		C556D5E720981C0E005F059B /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		C556D5E820981C0E005F059B /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		C556D5E920981C0E005F059B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C556D5EA20981C0E005F059B /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		C556D5EB20981C0E005F059B /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		C556D5ED20981C0E005F059B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C556D5EE20981C0E005F059B /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		C556D5F020981C0E005F059B /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		C556D5F220981C0E005F059B /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		C556D5F320981C0E005F059B /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		C556D5F420981C0E005F059B /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		C556D5F520981C0E005F059B /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		C556D5F620981C0E005F059B /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		C556D5F720981C0E005F059B /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		C556D5F820981C0E005F059B /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		C556D5F920981C0E005F059B /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		C556D5FA20981C0E005F059B /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		C556D5FB20981C0E005F059B /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		C556D5FC20981C0E005F059B /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		C556D5FD20981C0E005F059B /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		C556D5FF20981C0E005F059B /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		C556D60020981C0E005F059B /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		C556D60120981C0E005F059B /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		C556D60220981C0E005F059B /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		C556D60320981C0E005F059B /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		C556D60420981C0E005F059B /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		C556D60520981C0E005F059B /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		C556D60620981C0E005F059B /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		C556D60720981C0E005F059B /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
+		C556D60820981C0E005F059B /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		C556D60920981C0E005F059B /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		C556D60A20981C0E005F059B /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		C556D60B20981C0E005F059B /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		C556D60C20981C0E005F059B /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		C556D60D20981C0E005F059B /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		C556D60E20981C0E005F059B /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		C556D60F20981C0E005F059B /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		C556D61020981C0E005F059B /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		C556D61120981C0E005F059B /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		C556D61220981C0E005F059B /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		C556D61320981C0E005F059B /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		C556D62820981C56005F059B /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		C556D62A20981D91005F059B /* MZLOATAutoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZLOATAutoViewController.h; sourceTree = "<group>"; };
+		C556D62B20981D91005F059B /* MZLOATAutoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZLOATAutoViewController.m; sourceTree = "<group>"; };
+		C556D62D20981DB1005F059B /* MZLDSYMManuallyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZLDSYMManuallyViewController.h; sourceTree = "<group>"; };
+		C556D62E20981DB1005F059B /* MZLDSYMManuallyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZLDSYMManuallyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C556D62920981C56005F059B /* libxml2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +163,7 @@
 				C556D56020981921005F059B /* MZLCrashLogAnalyzeTests */,
 				C556D56B20981921005F059B /* MZLCrashLogAnalyzeUITests */,
 				C556D54820981920005F059B /* Products */,
+				C556D62720981C56005F059B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,15 +180,13 @@
 		C556D54920981920005F059B /* MZLCrashLogAnalyze */ = {
 			isa = PBXGroup;
 			children = (
-				C556D54A20981920005F059B /* AppDelegate.h */,
-				C556D54B20981920005F059B /* AppDelegate.m */,
-				C556D54D20981920005F059B /* ViewController.h */,
-				C556D54E20981920005F059B /* ViewController.m */,
-				C556D55020981921005F059B /* Assets.xcassets */,
+				C556D5B320981A65005F059B /* AppDelegate */,
+				C556D5B620981A65005F059B /* Controller */,
+				C556D57B20981A65005F059B /* Handler */,
+				C556D5E520981C0E005F059B /* OpenSource */,
 				C556D55220981921005F059B /* Main.storyboard */,
-				C556D55520981921005F059B /* Info.plist */,
-				C556D55620981921005F059B /* main.m */,
-				C556D55820981921005F059B /* MZLCrashLogAnalyze.entitlements */,
+				C556D55020981921005F059B /* Assets.xcassets */,
+				C556D57A209819F2005F059B /* Supporting Files */,
 			);
 			path = MZLCrashLogAnalyze;
 			sourceTree = "<group>";
@@ -129,6 +207,155 @@
 				C556D56E20981921005F059B /* Info.plist */,
 			);
 			path = MZLCrashLogAnalyzeUITests;
+			sourceTree = "<group>";
+		};
+		C556D57A209819F2005F059B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C556D55820981921005F059B /* MZLCrashLogAnalyze.entitlements */,
+				C556D55520981921005F059B /* Info.plist */,
+				C556D55620981921005F059B /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C556D57B20981A65005F059B /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				C556D5DC20981ACD005F059B /* MZLAnalyzeHandler.h */,
+				C556D5DD20981ACD005F059B /* MZLAnalyzeHandler.m */,
+				C556D5DF20981AE0005F059B /* MZLFileHandler.h */,
+				C556D5E020981AE0005F059B /* MZLFileHandler.m */,
+				C556D5E220981AF3005F059B /* MZLShellScriptHandler.h */,
+				C556D5E320981AF3005F059B /* MZLShellScriptHandler.m */,
+				C556D58520981A65005F059B /* Shell */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		C556D58520981A65005F059B /* Shell */ = {
+			isa = PBXGroup;
+			children = (
+				C556D58620981A65005F059B /* findSymbolicatecrash.sh */,
+				C556D58720981A65005F059B /* analyzeCrashLog.sh */,
+			);
+			path = Shell;
+			sourceTree = "<group>";
+		};
+		C556D5B320981A65005F059B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C556D5D920981A77005F059B /* MZLAppDelegate.h */,
+				C556D5DA20981A77005F059B /* MZLAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C556D5B620981A65005F059B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C556D62A20981D91005F059B /* MZLOATAutoViewController.h */,
+				C556D62B20981D91005F059B /* MZLOATAutoViewController.m */,
+				C556D62D20981DB1005F059B /* MZLDSYMManuallyViewController.h */,
+				C556D62E20981DB1005F059B /* MZLDSYMManuallyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C556D5E520981C0E005F059B /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				C556D5E620981C0E005F059B /* HMTL */,
+				C556D5EC20981C0E005F059B /* SSZipArchive */,
+			);
+			path = OpenSource;
+			sourceTree = "<group>";
+		};
+		C556D5E620981C0E005F059B /* HMTL */ = {
+			isa = PBXGroup;
+			children = (
+				C556D5E820981C0E005F059B /* HTMLNode.h */,
+				C556D5EB20981C0E005F059B /* HTMLNode.m */,
+				C556D5EA20981C0E005F059B /* HTMLParser.h */,
+				C556D5E720981C0E005F059B /* HTMLParser.m */,
+				C556D5E920981C0E005F059B /* README.md */,
+			);
+			path = HMTL;
+			sourceTree = "<group>";
+		};
+		C556D5EC20981C0E005F059B /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				C556D5ED20981C0E005F059B /* README.md */,
+				C556D5EE20981C0E005F059B /* LICENSE.txt */,
+				C556D5EF20981C0E005F059B /* SSZipArchive */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		C556D5EF20981C0E005F059B /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				C556D5FE20981C0E005F059B /* aes */,
+				C556D5F120981C0E005F059B /* minizip */,
+				C556D5FB20981C0E005F059B /* SSZipArchive.h */,
+				C556D5FD20981C0E005F059B /* SSZipArchive.m */,
+				C556D5FC20981C0E005F059B /* SSZipCommon.h */,
+				C556D5F020981C0E005F059B /* ZipArchive.h */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		C556D5F120981C0E005F059B /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				C556D5F620981C0E005F059B /* crypt.h */,
+				C556D5F420981C0E005F059B /* ioapi.c */,
+				C556D5FA20981C0E005F059B /* ioapi.h */,
+				C556D5F520981C0E005F059B /* mztools.c */,
+				C556D5F920981C0E005F059B /* mztools.h */,
+				C556D5F220981C0E005F059B /* unzip.c */,
+				C556D5F820981C0E005F059B /* unzip.h */,
+				C556D5F320981C0E005F059B /* zip.c */,
+				C556D5F720981C0E005F059B /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		C556D5FE20981C0E005F059B /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				C556D60720981C0E005F059B /* aes_via_ace.h */,
+				C556D60E20981C0E005F059B /* aes.h */,
+				C556D60420981C0E005F059B /* aescrypt.c */,
+				C556D60020981C0E005F059B /* aeskey.c */,
+				C556D60620981C0E005F059B /* aesopt.h */,
+				C556D61020981C0E005F059B /* aestab.c */,
+				C556D60220981C0E005F059B /* aestab.h */,
+				C556D60C20981C0E005F059B /* brg_endian.h */,
+				C556D60920981C0E005F059B /* brg_types.h */,
+				C556D61320981C0E005F059B /* entropy.c */,
+				C556D60A20981C0E005F059B /* entropy.h */,
+				C556D60520981C0E005F059B /* fileenc.c */,
+				C556D61220981C0E005F059B /* fileenc.h */,
+				C556D60120981C0E005F059B /* hmac.c */,
+				C556D60B20981C0E005F059B /* hmac.h */,
+				C556D60D20981C0E005F059B /* prng.c */,
+				C556D5FF20981C0E005F059B /* prng.h */,
+				C556D60F20981C0E005F059B /* pwd2key.c */,
+				C556D60320981C0E005F059B /* pwd2key.h */,
+				C556D60820981C0E005F059B /* sha1.c */,
+				C556D61120981C0E005F059B /* sha1.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		C556D62720981C56005F059B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C556D62820981C56005F059B /* libxml2.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +461,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C556D61720981C0E005F059B /* README.md in Resources */,
+				C556D5C320981A65005F059B /* analyzeCrashLog.sh in Resources */,
 				C556D55120981921005F059B /* Assets.xcassets in Resources */,
+				C556D61520981C0E005F059B /* README.md in Resources */,
+				C556D5C220981A65005F059B /* findSymbolicatecrash.sh in Resources */,
 				C556D55420981921005F059B /* Main.storyboard in Resources */,
+				C556D61820981C0E005F059B /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +492,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C556D54F20981920005F059B /* ViewController.m in Sources */,
+				C556D5E120981AE0005F059B /* MZLFileHandler.m in Sources */,
+				C556D62C20981D91005F059B /* MZLOATAutoViewController.m in Sources */,
+				C556D61420981C0E005F059B /* HTMLParser.m in Sources */,
+				C556D61C20981C0E005F059B /* mztools.c in Sources */,
+				C556D61D20981C0E005F059B /* SSZipArchive.m in Sources */,
+				C556D5DE20981ACD005F059B /* MZLAnalyzeHandler.m in Sources */,
+				C556D62620981C0E005F059B /* entropy.c in Sources */,
 				C556D55720981921005F059B /* main.m in Sources */,
-				C556D54C20981920005F059B /* AppDelegate.m in Sources */,
+				C556D62220981C0E005F059B /* sha1.c in Sources */,
+				C556D61920981C0E005F059B /* unzip.c in Sources */,
+				C556D5E420981AF3005F059B /* MZLShellScriptHandler.m in Sources */,
+				C556D62520981C0E005F059B /* aestab.c in Sources */,
+				C556D5DB20981A77005F059B /* MZLAppDelegate.m in Sources */,
+				C556D61B20981C0E005F059B /* ioapi.c in Sources */,
+				C556D62120981C0E005F059B /* fileenc.c in Sources */,
+				C556D61F20981C0E005F059B /* hmac.c in Sources */,
+				C556D61620981C0E005F059B /* HTMLNode.m in Sources */,
+				C556D62420981C0E005F059B /* pwd2key.c in Sources */,
+				C556D61A20981C0E005F059B /* zip.c in Sources */,
+				C556D61E20981C0E005F059B /* aeskey.c in Sources */,
+				C556D63020981DB1005F059B /* MZLDSYMManuallyViewController.m in Sources */,
+				C556D62320981C0E005F059B /* prng.c in Sources */,
+				C556D62020981C0E005F059B /* aescrypt.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,11 +674,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MZLCrashLogAnalyze/MZLCrashLogAnalyze.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "MZLCrashLogAnalyze/Supporting Files/MZLCrashLogAnalyze.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6ZRSX578T3;
-				INFOPLIST_FILE = MZLCrashLogAnalyze/Info.plist;
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
+				INFOPLIST_FILE = "MZLCrashLogAnalyze/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -440,11 +693,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MZLCrashLogAnalyze/MZLCrashLogAnalyze.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "MZLCrashLogAnalyze/Supporting Files/MZLCrashLogAnalyze.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6ZRSX578T3;
-				INFOPLIST_FILE = MZLCrashLogAnalyze/Info.plist;
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
+				INFOPLIST_FILE = "MZLCrashLogAnalyze/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="4VM-HN-d2G">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -10,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="MZLCrashLogAnalyze" id="1Xt-HY-uBw">
+                            <menuItem title="CrashLog" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="MZLCrashLogAnalyze" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="CrashLog" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About MZLCrashLogAnalyze" id="5kV-Vb-QxS">
+                                        <menuItem title="About CrashLog" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -28,7 +29,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide MZLCrashLogAnalyze" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide CrashLog" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -46,7 +47,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit MZLCrashLogAnalyze" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit CrashLog" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -659,7 +660,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="MZLCrashLogAnalyze Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="CrashLog Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -673,45 +674,243 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider=""/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller-->
-        <scene sceneID="R2V-B0-nI4">
+        <!--CrashAnalyze-->
+        <scene sceneID="wpU-q6-k76">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-			<connections>
-                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
-                    </connections>
-                </windowController>
-                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75" y="250"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
-            <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <tabViewController title="CrashAnalyze" selectedTabViewItemIndex="0" id="4VM-HN-d2G" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem label="OTA自动下载解析" identifier="" id="Psd-cT-LqJ"/>
+                        <tabViewItem label="手动DSYM解析" identifier="" id="GIi-8A-hcX"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="LAS-Mb-owW">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                        <font key="font" metaFont="message"/>
+                        <connections>
+                            <outlet property="delegate" destination="4VM-HN-d2G" id="0xF-63-gEi"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="LAS-Mb-owW" id="1MJ-Cy-H99"/>
+                        <segue destination="wgQ-SA-OJI" kind="relationship" relationship="tabItems" id="e8n-og-7mx"/>
+                        <segue destination="qr8-6h-a6g" kind="relationship" relationship="tabItems" id="0VE-PX-Ofk"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="D2n-GV-Zp0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="83" y="280"/>
+        </scene>
+        <!--Auto View Controller-->
+        <scene sceneID="SpQ-ld-O8G">
+            <objects>
+                <viewController id="wgQ-SA-OJI" customClass="MZLOATAutoViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="OaK-kL-BY7">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2H-4H-zbZ">
+                                <rect key="frame" x="48" y="198" width="106" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="选择文件" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TVj-de-ros">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="14"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="selectIpsAction:" target="wgQ-SA-OJI" id="qQP-DT-vEq"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHx-F3-ryD">
+                                <rect key="frame" x="162" y="201" width="284" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="选择ips或crash文件" drawsBackground="YES" id="CtD-5I-aKB">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Pz-BE-uyU">
+                                <rect key="frame" x="52" y="309" width="396" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="输入crash对应的OTA包名, 即可自动从OTA上下载Dsym，选择完ips之后即可开始解析, 最终在“下载/CrashLog”会输出一个解析后的日志" id="79t-i5-NTe">
+                                    <font key="font" size="15" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" red="0.73333333329999995" green="0.134114028" blue="0.074442540759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTQ-3k-y9K">
+                                <rect key="frame" x="54" y="255" width="392" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="请输入OTA包名（例：SinaNews_V6.5.7_201710181002_Debug）" drawsBackground="YES" id="zwc-V4-pLA">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRU-GW-9bh">
+                                <rect key="frame" x="52" y="124" width="396" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="yCw-Bv-hwu">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" red="0.68707496759999998" green="0.14707759400000001" blue="0.1179964193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOL-gJ-2df">
+                                <rect key="frame" x="54" y="62" width="392" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="取消" bezelStyle="texturedRounded" alignment="center" enabled="NO" borderStyle="border" inset="2" id="M8V-15-dan">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancelAnalyzeAction:" target="wgQ-SA-OJI" id="MYv-DX-SVv"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEu-SQ-L1L">
+                                <rect key="frame" x="54" y="92" width="392" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="开始解析" bezelStyle="texturedRounded" alignment="center" borderStyle="border" inset="2" id="e0q-Kw-7AC">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="startAnalyzeAction:" target="wgQ-SA-OJI" id="DaR-Gs-4GL"/>
+                                </connections>
+                            </button>
+                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="0PO-ow-YJc">
+                                <rect key="frame" x="279" y="97" width="16" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="KOL-gJ-2df" id="N5w-Du-ZBK"/>
+                        <outlet property="ipaNameTextField" destination="HTQ-3k-y9K" id="ujn-L5-t2O"/>
+                        <outlet property="ipsPathTextField" destination="gHx-F3-ryD" id="HFP-rV-luo"/>
+                        <outlet property="ipsSelectButton" destination="a2H-4H-zbZ" id="akn-IB-3YJ"/>
+                        <outlet property="progressIndicator" destination="0PO-ow-YJc" id="dDE-Rg-QT2"/>
+                        <outlet property="progressLabel" destination="fRU-GW-9bh" id="TaK-P2-LZB"/>
+                        <outlet property="startButton" destination="VEu-SQ-L1L" id="rAY-h6-knp"/>
+                    </connections>
+                </viewController>
+                <customObject id="SQv-Kv-Xbr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="308"/>
+        </scene>
+        <!--Manually View Controller-->
+        <scene sceneID="UVe-mc-YdO">
+            <objects>
+                <viewController id="qr8-6h-a6g" customClass="MZLDSYMManuallyViewController" sceneMemberID="viewController">
+                    <view key="view" id="EZw-EG-K9t">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RKy-9X-w6H">
+                                <rect key="frame" x="46" y="255" width="106" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="选择文件" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8nA-EC-2Y1">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="14"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="selectDsymAction:" target="qr8-6h-a6g" id="c06-Dw-2xq"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nae-lu-KyF">
+                                <rect key="frame" x="160" y="256" width="284" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="选择dsym文件" drawsBackground="YES" id="z6A-XG-iFL">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m3X-q5-R5T">
+                                <rect key="frame" x="46" y="183" width="106" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="选择文件" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QJA-yQ-2lh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="14"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="selectIpsAction:" target="qr8-6h-a6g" id="ch3-bn-gbC"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sge-JS-mYY">
+                                <rect key="frame" x="160" y="189" width="284" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="选择ips或crash文件" drawsBackground="YES" id="4p2-Tv-2Q9">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Fc-ob-C8f">
+                                <rect key="frame" x="50" y="311" width="396" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="选择完dsym文件(dsym zip或dsym)和ips文件之后可开始解析, 最终在“下载/CrashLog”会输出一个解析后的日志" id="O82-r4-No4">
+                                    <font key="font" size="15" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" red="0.73333333329999995" green="0.134114028" blue="0.074442540759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKD-8V-jfe">
+                                <rect key="frame" x="50" y="116" width="396" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="gZq-hS-ac8">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" red="0.68707496759999998" green="0.14707759400000001" blue="0.1179964193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hLY-Jj-SR5">
+                                <rect key="frame" x="52" y="54" width="392" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="取消" bezelStyle="texturedRounded" alignment="center" enabled="NO" borderStyle="border" inset="2" id="tXZ-Ex-c1U">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancelAnalyzeAction:" target="qr8-6h-a6g" id="Xkg-JU-PnR"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5o-mc-cwh">
+                                <rect key="frame" x="52" y="84" width="392" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="开始解析" bezelStyle="texturedRounded" alignment="center" borderStyle="border" inset="2" id="CTo-1L-wph">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="startAnalyzeAction:" target="qr8-6h-a6g" id="hfT-gI-4iG"/>
+                                </connections>
+                            </button>
+                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="59c-qJ-Rvd">
+                                <rect key="frame" x="280" y="89" width="16" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="hLY-Jj-SR5" id="hoF-C6-LZF"/>
+                        <outlet property="dsymPathTextField" destination="Nae-lu-KyF" id="s4E-Um-UJq"/>
+                        <outlet property="dsymSelectButton" destination="RKy-9X-w6H" id="KbX-Uy-8q6"/>
+                        <outlet property="ipsPathTextField" destination="Sge-JS-mYY" id="PzC-2v-Md2"/>
+                        <outlet property="ipsSelectButton" destination="m3X-q5-R5T" id="bN5-0T-Yde"/>
+                        <outlet property="progressIndicator" destination="59c-qJ-Rvd" id="Gc6-uR-dee"/>
+                        <outlet property="progressLabel" destination="VKD-8V-jfe" id="oSf-fA-DG4"/>
+                        <outlet property="startButton" destination="f5o-mc-cwh" id="1ec-Oa-9Ls"/>
+                    </connections>
+                </viewController>
+                <customObject id="naL-12-ghy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="812"/>
         </scene>
     </scenes>
 </document>
