@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C556D54C20981920005F059B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D54B20981920005F059B /* AppDelegate.m */; };
+		C556D54F20981920005F059B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D54E20981920005F059B /* ViewController.m */; };
+		C556D55120981921005F059B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C556D55020981921005F059B /* Assets.xcassets */; };
+		C556D55420981921005F059B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C556D55220981921005F059B /* Main.storyboard */; };
+		C556D55720981921005F059B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D55620981921005F059B /* main.m */; };
+		C556D56220981921005F059B /* MZLCrashLogAnalyzeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D56120981921005F059B /* MZLCrashLogAnalyzeTests.m */; };
+		C556D56D20981921005F059B /* MZLCrashLogAnalyzeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C556D56C20981921005F059B /* MZLCrashLogAnalyzeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C556D55E20981921005F059B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C556D53F20981920005F059B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C556D54620981920005F059B;
+			remoteInfo = MZLCrashLogAnalyze;
+		};
+		C556D56920981921005F059B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C556D53F20981920005F059B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C556D54620981920005F059B;
+			remoteInfo = MZLCrashLogAnalyze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C556D54720981920005F059B /* MZLCrashLogAnalyze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZLCrashLogAnalyze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C556D54A20981920005F059B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C556D54B20981920005F059B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C556D54D20981920005F059B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C556D54E20981920005F059B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C556D55020981921005F059B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C556D55320981921005F059B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C556D55520981921005F059B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C556D55620981921005F059B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C556D55820981921005F059B /* MZLCrashLogAnalyze.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MZLCrashLogAnalyze.entitlements; sourceTree = "<group>"; };
+		C556D55D20981921005F059B /* MZLCrashLogAnalyzeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZLCrashLogAnalyzeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C556D56120981921005F059B /* MZLCrashLogAnalyzeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZLCrashLogAnalyzeTests.m; sourceTree = "<group>"; };
+		C556D56320981921005F059B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C556D56820981921005F059B /* MZLCrashLogAnalyzeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZLCrashLogAnalyzeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C556D56C20981921005F059B /* MZLCrashLogAnalyzeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZLCrashLogAnalyzeUITests.m; sourceTree = "<group>"; };
+		C556D56E20981921005F059B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C556D54420981920005F059B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C556D55A20981921005F059B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C556D56520981921005F059B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C556D53E20981920005F059B = {
+			isa = PBXGroup;
+			children = (
+				C556D54920981920005F059B /* MZLCrashLogAnalyze */,
+				C556D56020981921005F059B /* MZLCrashLogAnalyzeTests */,
+				C556D56B20981921005F059B /* MZLCrashLogAnalyzeUITests */,
+				C556D54820981920005F059B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C556D54820981920005F059B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C556D54720981920005F059B /* MZLCrashLogAnalyze.app */,
+				C556D55D20981921005F059B /* MZLCrashLogAnalyzeTests.xctest */,
+				C556D56820981921005F059B /* MZLCrashLogAnalyzeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C556D54920981920005F059B /* MZLCrashLogAnalyze */ = {
+			isa = PBXGroup;
+			children = (
+				C556D54A20981920005F059B /* AppDelegate.h */,
+				C556D54B20981920005F059B /* AppDelegate.m */,
+				C556D54D20981920005F059B /* ViewController.h */,
+				C556D54E20981920005F059B /* ViewController.m */,
+				C556D55020981921005F059B /* Assets.xcassets */,
+				C556D55220981921005F059B /* Main.storyboard */,
+				C556D55520981921005F059B /* Info.plist */,
+				C556D55620981921005F059B /* main.m */,
+				C556D55820981921005F059B /* MZLCrashLogAnalyze.entitlements */,
+			);
+			path = MZLCrashLogAnalyze;
+			sourceTree = "<group>";
+		};
+		C556D56020981921005F059B /* MZLCrashLogAnalyzeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C556D56120981921005F059B /* MZLCrashLogAnalyzeTests.m */,
+				C556D56320981921005F059B /* Info.plist */,
+			);
+			path = MZLCrashLogAnalyzeTests;
+			sourceTree = "<group>";
+		};
+		C556D56B20981921005F059B /* MZLCrashLogAnalyzeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C556D56C20981921005F059B /* MZLCrashLogAnalyzeUITests.m */,
+				C556D56E20981921005F059B /* Info.plist */,
+			);
+			path = MZLCrashLogAnalyzeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C556D54620981920005F059B /* MZLCrashLogAnalyze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C556D57120981921005F059B /* Build configuration list for PBXNativeTarget "MZLCrashLogAnalyze" */;
+			buildPhases = (
+				C556D54320981920005F059B /* Sources */,
+				C556D54420981920005F059B /* Frameworks */,
+				C556D54520981920005F059B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MZLCrashLogAnalyze;
+			productName = MZLCrashLogAnalyze;
+			productReference = C556D54720981920005F059B /* MZLCrashLogAnalyze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C556D55C20981921005F059B /* MZLCrashLogAnalyzeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C556D57420981921005F059B /* Build configuration list for PBXNativeTarget "MZLCrashLogAnalyzeTests" */;
+			buildPhases = (
+				C556D55920981921005F059B /* Sources */,
+				C556D55A20981921005F059B /* Frameworks */,
+				C556D55B20981921005F059B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C556D55F20981921005F059B /* PBXTargetDependency */,
+			);
+			name = MZLCrashLogAnalyzeTests;
+			productName = MZLCrashLogAnalyzeTests;
+			productReference = C556D55D20981921005F059B /* MZLCrashLogAnalyzeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C556D56720981921005F059B /* MZLCrashLogAnalyzeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C556D57720981921005F059B /* Build configuration list for PBXNativeTarget "MZLCrashLogAnalyzeUITests" */;
+			buildPhases = (
+				C556D56420981921005F059B /* Sources */,
+				C556D56520981921005F059B /* Frameworks */,
+				C556D56620981921005F059B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C556D56A20981921005F059B /* PBXTargetDependency */,
+			);
+			name = MZLCrashLogAnalyzeUITests;
+			productName = MZLCrashLogAnalyzeUITests;
+			productReference = C556D56820981921005F059B /* MZLCrashLogAnalyzeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C556D53F20981920005F059B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = lijin;
+				TargetAttributes = {
+					C556D54620981920005F059B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					C556D55C20981921005F059B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = C556D54620981920005F059B;
+					};
+					C556D56720981921005F059B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = C556D54620981920005F059B;
+					};
+				};
+			};
+			buildConfigurationList = C556D54220981920005F059B /* Build configuration list for PBXProject "MZLCrashLogAnalyze" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C556D53E20981920005F059B;
+			productRefGroup = C556D54820981920005F059B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C556D54620981920005F059B /* MZLCrashLogAnalyze */,
+				C556D55C20981921005F059B /* MZLCrashLogAnalyzeTests */,
+				C556D56720981921005F059B /* MZLCrashLogAnalyzeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C556D54520981920005F059B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C556D55120981921005F059B /* Assets.xcassets in Resources */,
+				C556D55420981921005F059B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C556D55B20981921005F059B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C556D56620981921005F059B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C556D54320981920005F059B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C556D54F20981920005F059B /* ViewController.m in Sources */,
+				C556D55720981921005F059B /* main.m in Sources */,
+				C556D54C20981920005F059B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C556D55920981921005F059B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C556D56220981921005F059B /* MZLCrashLogAnalyzeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C556D56420981921005F059B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C556D56D20981921005F059B /* MZLCrashLogAnalyzeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C556D55F20981921005F059B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C556D54620981920005F059B /* MZLCrashLogAnalyze */;
+			targetProxy = C556D55E20981921005F059B /* PBXContainerItemProxy */;
+		};
+		C556D56A20981921005F059B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C556D54620981920005F059B /* MZLCrashLogAnalyze */;
+			targetProxy = C556D56920981921005F059B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C556D55220981921005F059B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C556D55320981921005F059B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C556D56F20981921005F059B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C556D57020981921005F059B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C556D57220981921005F059B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MZLCrashLogAnalyze/MZLCrashLogAnalyze.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6ZRSX578T3;
+				INFOPLIST_FILE = MZLCrashLogAnalyze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzl.MZLCrashLogAnalyze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C556D57320981921005F059B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MZLCrashLogAnalyze/MZLCrashLogAnalyze.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6ZRSX578T3;
+				INFOPLIST_FILE = MZLCrashLogAnalyze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzl.MZLCrashLogAnalyze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C556D57520981921005F059B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6ZRSX578T3;
+				INFOPLIST_FILE = MZLCrashLogAnalyzeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzl.MZLCrashLogAnalyzeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MZLCrashLogAnalyze.app/Contents/MacOS/MZLCrashLogAnalyze";
+			};
+			name = Debug;
+		};
+		C556D57620981921005F059B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6ZRSX578T3;
+				INFOPLIST_FILE = MZLCrashLogAnalyzeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzl.MZLCrashLogAnalyzeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MZLCrashLogAnalyze.app/Contents/MacOS/MZLCrashLogAnalyze";
+			};
+			name = Release;
+		};
+		C556D57820981921005F059B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6ZRSX578T3;
+				INFOPLIST_FILE = MZLCrashLogAnalyzeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzl.MZLCrashLogAnalyzeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MZLCrashLogAnalyze;
+			};
+			name = Debug;
+		};
+		C556D57920981921005F059B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6ZRSX578T3;
+				INFOPLIST_FILE = MZLCrashLogAnalyzeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzl.MZLCrashLogAnalyzeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MZLCrashLogAnalyze;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C556D54220981920005F059B /* Build configuration list for PBXProject "MZLCrashLogAnalyze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C556D56F20981921005F059B /* Debug */,
+				C556D57020981921005F059B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C556D57120981921005F059B /* Build configuration list for PBXNativeTarget "MZLCrashLogAnalyze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C556D57220981921005F059B /* Debug */,
+				C556D57320981921005F059B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C556D57420981921005F059B /* Build configuration list for PBXNativeTarget "MZLCrashLogAnalyzeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C556D57520981921005F059B /* Debug */,
+				C556D57620981921005F059B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C556D57720981921005F059B /* Build configuration list for PBXNativeTarget "MZLCrashLogAnalyzeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C556D57820981921005F059B /* Debug */,
+				C556D57920981921005F059B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C556D53F20981920005F059B /* Project object */;
+}
