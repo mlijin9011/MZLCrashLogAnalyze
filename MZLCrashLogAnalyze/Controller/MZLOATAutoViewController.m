@@ -23,6 +23,7 @@
 
 @property (nonatomic, copy) NSString *ipaName;
 @property (nonatomic, copy) NSString *ipsPath;
+@property (nonatomic, copy) NSString *dsymPath;
 
 @property (nonatomic, assign) BOOL isAnalyzeing;
 @property (nonatomic, strong) NSURLSessionDownloadTask *downloadTask;
@@ -126,10 +127,17 @@
 }
 
 - (BOOL)checkDsymFileExists {
+    self.dsymPath = nil;
+    
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSString *dsymPath = [[[MZLAnalyzeHandler sharedInstance].crashFolderPath stringByAppendingPathComponent:self.ipaName] stringByAppendingPathComponent:@"SinaNews.app.dSYM"];
-    if ([fileManager fileExistsAtPath:dsymPath]) {
-        return YES;
+    NSString *folderPath = [[MZLAnalyzeHandler sharedInstance].crashFolderPath stringByAppendingPathComponent:self.ipaName];
+    NSDirectoryEnumerator *enumerator = [fileManager enumeratorAtPath:folderPath];
+    NSString *path = folderPath;
+    while ((path = [enumerator nextObject]) != nil) {
+        if ([path hasSuffix:@"SinaNews.app.dSYM"]) {
+            self.dsymPath = [folderPath stringByAppendingPathComponent:path];
+            return YES;
+        }
     }
     return NO;
 }
@@ -317,7 +325,7 @@
     
     [self showProgressTip:@"解析 crash log"];
     
-    NSString *dsymPath = [[[MZLAnalyzeHandler sharedInstance].crashFolderPath stringByAppendingPathComponent:self.ipaName] stringByAppendingPathComponent:@"SinaNews.app.dSYM"];
+    NSString *dsymPath = self.dsymPath;
     NSString *fileName = [[self.ipsPath lastPathComponent] stringByDeletingPathExtension];
     NSString *outputPath = [[[MZLAnalyzeHandler sharedInstance].crashFolderPath stringByAppendingPathComponent:fileName] stringByAppendingFormat:@".crash"];
     WEAKSELF

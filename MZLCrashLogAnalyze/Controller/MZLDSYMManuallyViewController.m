@@ -145,19 +145,17 @@
 - (BOOL)checkDsymFileExists {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if (self.dsymPath.length > 0) {
-        NSString *dsymPath = self.dsymPath;
-        if ([fileManager fileExistsAtPath:dsymPath]) {
+        if ([fileManager fileExistsAtPath:self.dsymPath]) {
             return YES;
         }
     } else if (self.dsymZipPath.length > 0) {
-        NSString *dsymPath = [[self.dsymZipPath stringByDeletingPathExtension] stringByAppendingPathComponent:@"SinaNews.app.dSYM"];
-        if ([fileManager fileExistsAtPath:dsymPath]) {
-            self.dsymPath = dsymPath;
-            return YES;
-        } else {
-            dsymPath = [[self.dsymZipPath stringByDeletingPathExtension] stringByAppendingPathComponent:@"dSYMs/SinaNews.app.dSYM"];
-            if ([fileManager fileExistsAtPath:dsymPath]) {
-                self.dsymPath = dsymPath;
+        self.dsymPath = nil;
+        NSString *folderPath = [self.dsymZipPath stringByDeletingPathExtension];
+        NSDirectoryEnumerator *enumerator = [fileManager enumeratorAtPath:folderPath];
+        NSString *path = folderPath;
+        while ((path = [enumerator nextObject]) != nil) {
+            if ([path hasSuffix:@"SinaNews.app.dSYM"]) {
+                self.dsymPath = [folderPath stringByAppendingPathComponent:path];
                 return YES;
             }
         }
@@ -199,7 +197,7 @@
     [self showProgressTip:@"解压下载的 dsym zip 文件"];
     
     NSString *dsymZipPath = self.dsymZipPath;
-    NSString *dsymFilePath = [self.dsymZipPath stringByDeletingPathExtension];
+    NSString *dsymFilePath = [self.dsymZipPath stringByDeletingLastPathComponent];
     [self unZipFile:dsymZipPath destination:dsymFilePath];
 }
 
