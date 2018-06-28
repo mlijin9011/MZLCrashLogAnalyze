@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="4VM-HN-d2G">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="4VM-HN-d2G">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -737,7 +737,7 @@
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Pz-BE-uyU">
                                 <rect key="frame" x="52" y="309" width="396" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="输入crash对应的OTA包名, 即可自动从OTA上下载Dsym，选择完ips之后即可开始解析, 最终在“下载/CrashLog”会输出一个解析后的日志" id="79t-i5-NTe">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="如果是解析SinaNews，输入crash对应的OTA包名, 可自动从OTA上下载Dsym, 最终在“下载/CrashLog”中输出一个解析后的日志；解析其他应用，则需要选择手动解析" id="79t-i5-NTe">
                                     <font key="font" size="15" name=".PingFangSC-Regular"/>
                                     <color key="textColor" red="0.73333333329999995" green="0.134114028" blue="0.074442540759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -854,7 +854,7 @@
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Fc-ob-C8f">
                                 <rect key="frame" x="50" y="311" width="396" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="选择完dsym文件(dsym zip或dsym)和ips文件之后可开始解析, 最终在“下载/CrashLog”会输出一个解析后的日志" id="O82-r4-No4">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="如果是解析SinaNews，可选择相应的Dsym zip文件自动解压并解析；解析其他应用，则需要选择相应的Dsym文件解析, 最终在“下载/CrashLog”输出一个解析后的日志" id="O82-r4-No4">
                                     <font key="font" size="15" name=".PingFangSC-Regular"/>
                                     <color key="textColor" red="0.73333333329999995" green="0.134114028" blue="0.074442540759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
